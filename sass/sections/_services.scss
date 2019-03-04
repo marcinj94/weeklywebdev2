@@ -1,0 +1,89 @@
+.services {
+    background-color: $blue;
+    padding: 80px 5px;
+    text-align: center;
+
+    .btn-services {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+        background-color: #fff;
+        border: 2px solid white;
+        box-shadow: 0 0 15px black;
+        transition: .3s;
+
+        .btn-text {
+            margin: 0;
+            width: 80%;
+            padding: 20px 0;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .fas {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 44px;
+            right: 20px;
+
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -40px;
+                left: -20px;
+                width: 2px;
+                height: 120px;
+                background-color: #eee;
+                transition: .3s;
+            }
+        }
+
+        &:hover {
+            // transform: scale(1.2);
+            transform: rotate(1deg) scale(1.1);
+        }
+
+        &:hover .fas:after {
+            background-color: #222;
+        }
+    }
+
+    .textContent {
+        color: white;
+        height: 0;
+        transform: scale(0);
+        transition: .3s;
+
+        &.active {
+            transform: scale(1);
+            height: 100%;
+        }
+    }
+
+    .titleSection {
+
+        position: relative;
+
+
+        .services-img {
+            width: 80%;
+        }
+
+        .services-title {
+            font-weight: bold;
+            color: white;
+            font-size: 4rem;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+    }
+
+}

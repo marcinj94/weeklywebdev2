@@ -1,0 +1,43 @@
+.navbar {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    .nav-item {
+        margin: 0 10px;
+        position: relative;
+
+        .nav-link {
+            color: black;
+            padding: 10px 15px;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        @media(min-width: 992px) {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: $orange;
+                transition: .3s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

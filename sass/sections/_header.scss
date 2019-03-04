@@ -1,0 +1,77 @@
+.header {
+    min-height: 100vh;
+    background: url('../img/header/bg.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding-top: 78px;
+    padding-bottom: 20px;
+
+    .textContent {
+        padding-top: 5vh;
+
+
+        margin: 0 auto;
+
+        @media (min-height: 545px) {
+            padding-top: 20vh;
+        }
+
+        @media (min-height: 960px) {
+            padding-top: 25vh;
+        }
+
+        .header-title {
+            font-weight: 700;
+            font-size: 4rem;
+        }
+    }
+
+    .btn-scroll {
+        width: 25px;
+        height: 50px;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: scrollBtnAnimation infinite 2s;
+
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 12px;
+            border-radius: 20px;
+            background-color: #000;
+        }
+    }
+
+    .btn-orange {
+        background-color: $orange;
+        border-color: $orange;
+        transition: .2s;
+        text-transform: uppercase;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+@keyframes scrollBtnAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}

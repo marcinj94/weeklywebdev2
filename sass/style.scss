@@ -1,0 +1,13 @@
+//Reset css
+// @import 'helpers/reset';
+
+//Helpers
+@import 'helpers/mixins';
+@import 'helpers/colors';
+
+// Sections
+@import 'sections/main';
+@import 'sections/nav';
+@import 'sections/header';
+@import 'sections/about';
+@import 'sections/services';
