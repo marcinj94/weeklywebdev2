@@ -68,4 +68,17 @@ $galleryBtn.on("click", function () {
         $galleryBtn.text('View more');
     }
     btnActive = !btnActive;
-})
+});
+
+//Smooth scroll
+
+//smooth scroll nav items
+$(".nav-link").on("click", function () {
+    const menuItem = $(this).attr("href");
+    $("body, html").animate(
+        {
+            scrollTop: $(menuItem).offset().top
+        },
+        2000
+    );
+});

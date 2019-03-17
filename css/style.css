@@ -3,10 +3,6 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -329,7 +325,7 @@ body {
 .gallery-title {
   font-weight: bold;
   font-size: 4rem;
-  padding-top: 50px;
+  padding-top: 80px;
   margin-bottom: 0;
 }
 
@@ -529,7 +525,7 @@ body {
   font-weight: bold;
   font-size: 4rem;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .blog-description {
