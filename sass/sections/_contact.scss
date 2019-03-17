@@ -1,0 +1,55 @@
+.contact {
+    background: url('../img/contact/bg.png') no-repeat center / cover;
+    text-align: center;
+
+    &-title {
+        font-weight: bold;
+        font-size: 4rem;
+        padding-top: 50px;
+    }
+
+    &-description {
+        font-weight: bold;
+        max-width: 350px;
+        margin: 30px auto;
+    }
+
+    .contact-form {
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+            color: white;
+            background-color: rgba(0, 196, 196, 0.5);
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:focus {
+                border-left: 4px solid #355b82;
+                background-color: rgba(0, 196, 196, 0.8);
+            }
+        }
+    }
+
+    .contact-info {
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 10px;
+
+        .info-title {
+            font-weight: bold;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        @media(min-width: 768px) {
+            margin: 0 0 0 120px;
+            background-color: transparent;
+        }
+    }
+}

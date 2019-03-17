@@ -505,7 +505,7 @@ body {
   font-weight: bold;
   font-size: 4rem;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .blog-description {
@@ -642,5 +642,77 @@ body {
 .blog .btn-blog:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.contact {
+  background: url("../img/contact/bg.png") no-repeat center/cover;
+  text-align: center;
+}
+
+.contact-title {
+  font-weight: bold;
+  font-size: 4rem;
+  padding-top: 50px;
+}
+
+.contact-description {
+  font-weight: bold;
+  max-width: 350px;
+  margin: 30px auto;
+}
+
+.contact .contact-form .form-input,
+.contact .contact-form .form-textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: rgba(0, 196, 196, 0.5);
+}
+
+.contact .contact-form .form-input::-webkit-input-placeholder,
+.contact .contact-form .form-textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact .contact-form .form-input:-ms-input-placeholder,
+.contact .contact-form .form-textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.contact .contact-form .form-input::-ms-input-placeholder,
+.contact .contact-form .form-textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.contact .contact-form .form-input::placeholder,
+.contact .contact-form .form-textarea::placeholder {
+  color: white;
+}
+
+.contact .contact-form .form-input:focus,
+.contact .contact-form .form-textarea:focus {
+  border-left: 4px solid #355b82;
+  background-color: rgba(0, 196, 196, 0.8);
+}
+
+.contact .contact-info {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px;
+}
+
+.contact .contact-info .info-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .contact .contact-info {
+    margin: 0 0 0 120px;
+    background-color: transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
