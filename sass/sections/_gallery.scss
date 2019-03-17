@@ -21,8 +21,13 @@
     &-images {
         padding-bottom: 50px;
 
+        .wrapper-hide {
+            display: none;
+        }
+
         .gallery-main,
-        .gallery-middle {
+        .gallery-middle,
+        .gallery-more {
 
             display: flex;
             flex-wrap: wrap;
@@ -48,7 +53,8 @@
                 }
             }
 
-            .gallery-middle {
+            .gallery-middle,
+            .gallery-more {
                 flex-wrap: nowrap;
 
                 .gallery-img {
@@ -83,7 +89,8 @@
                 }
             }
 
-            .gallery-middle {
+            .gallery-middle,
+            .gallery-more {
                 margin-top: 20px;
 
                 .gallery-img {
