@@ -432,4 +432,66 @@ body {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+.subscribe {
+  background: url("../img/subscribe/subs-bg.png") no-repeat;
+  background-size: cover;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 550px) {
+  .subscribe {
+    background-position: center;
+  }
+}
+
+.subscribe-title {
+  font-weight: bold;
+}
+
+.subscribe-wrapper {
+  padding: 80px 0;
+}
+
+.subscribe .subscribe-form {
+  position: relative;
+}
+
+.subscribe .subscribe-form .form-input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.subscribe .subscribe-form .form-input:focus {
+  -webkit-box-shadow: 0 0 5px green;
+          box-shadow: 0 0 5px green;
+}
+
+.subscribe .subscribe-form .form-btn {
+  background-color: #96b92c;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  border: none;
+  -webkit-box-shadow: 0 2px 3px gray;
+          box-shadow: 0 2px 3px gray;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.subscribe .subscribe-form .form-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (min-width: 576px) {
+  .subscribe .subscribe-form .form-btn {
+    position: absolute;
+    top: 0;
+    right: -180px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
