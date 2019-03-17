@@ -1,0 +1,116 @@
+.gallery {
+    background-color: $yellow;
+    text-align: center;
+    padding-bottom: 80px;
+
+    &-title {
+        font-weight: bold;
+        font-size: 4rem;
+        padding-top: 50px;
+        margin-bottom: 0;
+    }
+
+    &-description {
+        max-width: 570px;
+        margin: auto;
+        padding: 30px 0;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    &-images {
+        padding-bottom: 50px;
+
+        .gallery-main,
+        .gallery-middle {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            .gallery-img {
+                width: 100%;
+                box-shadow: 0 2px 10px 0 rgba(50, 50, 50, .6);
+                margin-bottom: 15px;
+            }
+        }
+
+        @media(min-width: 550px) {
+
+            .gallery-main {
+
+                .item-small {
+                    display: flex;
+
+                    .gallery-img {
+                        padding: 0;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .gallery-middle {
+                flex-wrap: nowrap;
+
+                .gallery-img {
+                    width: 90%;
+                }
+            }
+
+        }
+
+        @media(min-width: 992px) {
+            .gallery-img {
+                transition: .5s;
+            }
+
+            .gallery-img:hover {
+                transform: scale(1.02) rotate(-2deg);
+                filter: grayscale(100%);
+            }
+
+            .gallery-main {
+                flex-wrap: nowrap;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .item-small {
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .gallery-img {
+                        width: 90%;
+                    }
+                }
+            }
+
+            .gallery-middle {
+                margin-top: 20px;
+
+                .gallery-img {
+                    width: 96%;
+                }
+            }
+
+        }
+
+        @media(min-width: 1200px) {
+            .item-big {
+                flex-basis: 65%;
+            }
+        }
+    }
+
+    .btn-view {
+        background-color: #5585a2;
+        border-radius: 0;
+        text-transform: uppercase;
+        padding: 10px 35px;
+        border: none;
+        box-shadow: 0 2px 3px gray;
+        transition: .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
